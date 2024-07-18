@@ -30,7 +30,14 @@ Choose Waymo Perception Datasets
 v1.4.1, December 2022: Improved the quality of the 2D video panoptic segmentation labels
 
 ### Step2. Use waymo2kitti.py
-For example
+```
+#parser.add_argument('load_dir', help='Directory to load Waymo Open Dataset tfrecords')
+#parser.add_argument('save_dir', help='Directory to save converted KITTI-format data')
+#parser.add_argument('--prefix', default='', help='Prefix to be added to converted file names')
+#parser.add_argument('--num_proc', default=1, help='Number of processes to spawn')
+```
+
+For example,
 
 ```
 python waymo2kitti.py yourpath/waymo/training yourpath/waymo2kitti/training --prefix "training" --num_proc [your number_proc]
@@ -38,6 +45,7 @@ python waymo2kitti.py yourpath/waymo/validation yourpath/waymo2kitti/training --
 python waymo2kitti.py yourpath/waymo/testing yourpath/waymo2kitti/testing --prefix "testing" --num_proc [your number_proc]
 
 ```
+
 
 ## References
 1. [Waymo-KITTI Converter](https://github.com/caizhongang/waymo_kitti_converter)
