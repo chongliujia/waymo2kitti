@@ -1,7 +1,7 @@
-#waymo2kitti
+# waymo2kitti
 
 
-##Setup
+## Setup
 ### Step1. Create and activate a new virtual environment 
 ```
 conda create -n waymo-kitti python=3.8
@@ -21,7 +21,7 @@ pip install waymo-open-dataset-tf-2-11-0==1.6.1
 ```
 pip install opencv-python matplotlib tqdm open3d
 ```
-##Convert WOD-format data to KITTI-format data
+## Convert WOD-format data to KITTI-format data
 ### Step1. Download Waymo Datasets
 [Waymo open datasets](https://waymo.com/open/download/)
 
@@ -39,6 +39,6 @@ python waymo2kitti.py yourpath/waymo/testing yourpath/waymo2kitti/testing --pref
 
 ```
 
-##References
+## References
 1. [Waymo-KITTI Converter](https://github.com/caizhongang/waymo_kitti_converter)
 2. [Waymo Open Dataset](https://github.com/waymo-research/waymo-open-dataset)
