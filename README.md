@@ -1,5 +1,5 @@
 # waymo2kitti
-
+Convert the waymo format dataset to kitti format
 
 ## Setup
 ### Step1. Create and activate a new virtual environment 
